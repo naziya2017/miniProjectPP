@@ -1,0 +1,84 @@
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>calConverter</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="utils.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<h1 class="text-center">Welcome to calConverter!</h1>
+
+	</head>
+	<form name="calcul">
+		<table align="center">
+
+			<tr>
+				<td colspan="4"> <input type="text" name="result" placeholder="0" style="text-align:right"> </td>
+			</tr>
+
+			<tr>
+				<td><button type="button" value="sin" onclick="number(value)"> sin </button> </td>
+				<td><button type="button" value="cos" onclick="number(value)"> cos</button> </td>
+				<td><button type="button" value="tan" onclick="number(value)"> tan </button> </td>
+				<td colspan="2">
+					<button type="button" value="C" class="clear" onclick="remv()" aria-placeholder="0"> C </button>
+				</td>
+			</tr>
+
+			<tr>
+				<td><button type="button" value="x^2" onclick="square()"> x<sup>2 </button> </td>
+				<td><button type="button" value="^" onclick="number(value)"> x<sup>y </button> </td>
+				<td><button type="button" value="sqrt2" onclick="sqrt2()"> &radic; </button> </td>
+				<td><button type="button" value="sqrt3" onclick="sqrt3()"> &#8731; </button> </td>
+			</tr>
+			<tr>
+				<td><button type="button" value="1" onclick="number(value)"> 1 </button> </td>
+				<td><button type="button" value="2" onclick="number(value)"> 2 </button> </td>
+				<td><button type="button" value="3" onclick="number(value)"> 3 </button> </td>
+				<td><button type="button" value="BACKSPC" onclick="BACKSPC()">X </button> </td>
+			</tr>
+			<tr>
+				<td><button type="button" value="4" onclick="number(value)"> 4</button> </td>
+				<td><button type="button" value="5" onclick="number(value)"> 5 </button> </td>
+				<td><button type="button" value="6" onclick="number(value)"> 6 </button> </td>
+				<td><button type="button" value="-" onclick="number(value)"> - </button> </td>
+			</tr>
+			<tr>
+				<td><button type="button" value="7" onclick="number(value)"> 7 </button> </td>
+				<td><button type="button" value="8" onclick="number(value)"> 8 </button> </td>
+				<td><button type="button" value="9" onclick="number(value)"> 9 </button> </td>
+				<td><button type="button" value="/" onclick="number(value)"> / </button> </td>
+			</tr>
+			<tr>
+				<td><button type="button" value="." onclick="number(value)"> . </button> </td>
+				<td><button type="button" value="0" onclick="number(value)"> 0 </button> </td>
+				<td><button type="button" value="*" onclick="number(value)"> * </button> </td>
+				<td><button type="button" value="%" onclick="number(value)"> % </button> </td>
+			</tr>
+			<tr>
+				<td colspan="2"> <button type="button" value="=" onclick="equal()" class="equal">=</button> </td>
+				<td><button type="button" value="+" onclick="number(value)"> + </button> </td>
+				<td><button type="button" value="pi" onclick="PI()"> &pi; </button> </td>
+			</tr>
+		</table>
+			  <h1 class="text-center">Digital Base Converter</h1>
+			
+			
+		  </div>	
+	</form>
+	<div class="container">
+      
+        <label for="fromBase"><h2>From Base:</h2></label>
+        <input type="number" id="fromBase" min="2" max="36" value="10">
+        <label for="toBase"><h2>To Base:</h2></label>
+        <input type="number" id="toBase" min="2" max="36" value="16">
+        <label for="number"><h2>Number to convert</h2></label>
+        <input type="text" id="number" placeholder="eg 123ab">
+        <button id="convertButton">Convert</button>
+        <label for="result">Result:</label>
+        <span id="result"></span>
+    </div>
+	<script src="script2.js"></script>
+</body>
+</html>
