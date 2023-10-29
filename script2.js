@@ -48,7 +48,9 @@ function evaluateExpression(expression) {
   } else if (expression.includes("cos")) {
     // Handle cosine function
     let inputValue = parseFloat(expression.slice(3)); // Parse the value
-    return Math.cos((inputValue * Math.PI) / 180); // Convert degrees to radians
+    let ans = Math.cos((inputValue * Math.PI) / 180); // Convert degrees to radians
+    // Round the result to 10 decimal places to avoid precision issues
+    return ans.toFixed(10);
   } else if (expression.includes("tan")) {
     // Handle tangent function
     let inputValue = parseFloat(expression.slice(3)); // Parse the value
